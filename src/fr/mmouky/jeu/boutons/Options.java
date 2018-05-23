@@ -15,14 +15,13 @@ public class Options extends Bouton {
 		super(x, y, width, height, "options", isLocked, affichage);
 	}
 
-	@Override
 	public void action() {
 		if (affichage.getMenu() == EMenu.Menu) {
 			affichage.setMenu(EMenu.Options);
 		}
 	}
 
-	@Override
+	
 	public void action(Graphics2D g2d) {
 		// TODO Auto-generated method stub
 

@@ -15,14 +15,14 @@ public class Play extends Bouton {
 		super(x, y, width, height, "play", isLocked, affichage);
 	}
 
-	@Override
+	
 	public void action() {
 		if (affichage.getMenu() == EMenu.Menu) {
 			affichage.setMenu(EMenu.Game);
 		}
 	}
 
-	@Override
+	
 	public void action(Graphics2D g2d) {
 
 	}

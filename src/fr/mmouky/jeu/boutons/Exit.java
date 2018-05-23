@@ -15,14 +15,14 @@ public class Exit extends Bouton {
 		super(x, y, width, height, "exit", isLocked, affichage);
 	}
 
-	@Override
+	
 	public void action() {
 		if(affichage.getMenu() == EMenu.Menu){
 			System.exit(0);
 		}
 	}
 
-	@Override
+	
 	public void action(Graphics2D g2d) {
 
 	}

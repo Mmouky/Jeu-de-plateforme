@@ -16,31 +16,30 @@ public class Mouse extends Observable implements MouseListener, MouseMotionListe
 		this.setAffichage(affichage);
 	}
 
-	@Override
+	
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseEntered(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseExited(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mousePressed(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
 	public void mouseReleased(MouseEvent e) {
 		for (Bouton bouton : Bouton.boutons) {
 			if (bouton.getRect().contains(e.getPoint()) && !bouton.isLocked()) {
@@ -51,13 +50,13 @@ public class Mouse extends Observable implements MouseListener, MouseMotionListe
 		}
 	}
 
-	@Override
+	
 	public void mouseDragged(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	
 	public void mouseMoved(MouseEvent e) {
 		for (Bouton bouton : Bouton.boutons) {
 			if (!bouton.isLocked()) {

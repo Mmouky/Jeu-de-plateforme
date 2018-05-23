@@ -13,7 +13,6 @@ public class Porte extends HitBox {
 		this.isOpen = isOpen;
 	}
 
-	@Override
 	public void dessiner(Graphics2D g2d) {
 		if (isOpen == true) {
 			g2d.setColor(Color.GREEN);

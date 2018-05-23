@@ -46,7 +46,6 @@ public abstract class Bouton implements IDessiner, IBoutonAction {
 		boutons.add(this);
 	}
 
-	@Override
 	public void dessiner(Graphics2D g2d) {
 		if (isLocked == false) {
 			if (isFocus == false) {

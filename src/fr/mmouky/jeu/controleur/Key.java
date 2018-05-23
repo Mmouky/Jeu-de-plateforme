@@ -10,7 +10,7 @@ public class Key extends Observable implements KeyListener {
 	public static boolean move_right;
 	public static boolean jump;
 	
-	@Override
+	
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			move_left = true;
@@ -25,7 +25,7 @@ public class Key extends Observable implements KeyListener {
 		this.notifyObservers();
 	}
 
-	@Override
+	
 	public void keyReleased(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			move_left = false;
@@ -40,7 +40,6 @@ public class Key extends Observable implements KeyListener {
 		this.notifyObservers();
 	}
 
-	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
 

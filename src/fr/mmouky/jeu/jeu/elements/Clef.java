@@ -14,7 +14,6 @@ public class Clef extends HitBox{
 		porte.setClef(this);
 	}
 
-	@Override
 	public void dessiner(Graphics2D g2d) {
 		g2d.drawImage(new ImageIcon("Key.png").getImage(), this.getX(), this.getY(), 25, 25, null);
 	}
